@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+
+}
+
+body {
+    background: rgb(208, 186, 186);
+    text-align: center;
+    color: black;
+}
+
+.header {
+    padding: 30px;
+    background-color: rgb(34, 39, 53);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+hr {
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+}
+
+.logo {
+    font-size: 32px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.navbar {
+    margin: 20px;
+}
+
+.navbar a {
+    font-size: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 15px;
+    position: relative;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: aliceblue;
+    transition: width 0.3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+
+h1 {
+    display: block;
+    color: black;
+    font-size: 2rem;
+    margin: 20px auto;
+    text-transform: capitalize;
+}
+
+.intro {
+    width: 80%;
+    padding: 80px;
+    margin: 150px auto 100px;
+    min-width: 540px;
+    text-align: center;
+}
+
+.intro img {
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.intro h2 {
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+
+.about-me {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    margin-top: 0px;
+    padding: 150px;
+}
+
+
+
+.left-area img {
+    width: 400px;
+    border-radius: 10px;
+    border-top: 4px solid black;
+    border-right: 4px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.my-description {
+    border-radius: 10px;
+    border-top: 4px solid black;
+    border-right: 4px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    padding: 20px;
+    text-align: left;
+    max-width: 500px;
+    min-width: 400px;
+    line-height: 1.5;
+}
+
+.my-description h1 {
+    text-align: center;
+}
+
+.my-experience {
+    margin: 100px auto;
+    border-radius: 10px;
+    border-top: 4px solid black;
+    border-right: 4px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    padding: 20px;
+    text-align: left;
+    max-width: 900px;
+    line-height: 2;
+    margin-bottom: 300px;
+}
+
+.my-experience a {
+    color: black;
+}
+
+.my-projects {
+    margin: 100px auto;
+    border-radius: 10px;
+    border-top: 4px solid black;
+    border-right: 4px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    padding: 20px;
+    text-align: left;
+    max-width: 900px;
+    line-height: 2;
+    margin-bottom: 100px;
+}
+
+.contact-me {
+    color: black;
+    height: 300px;
+    padding: 50px 0px 20px;
+    margin: 200px auto;
+    text-align: center;
+}
+
+.contact-me p {
+    margin-top: 40px;
+
+}
+
+.btn {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 70px;
+    border-top: 2px solid white;
+}
+
+.links {
+    background-color: rgb(34, 39, 53);
+    width: auto;
+    height: 300px;
+    padding: 50px 0px 20px;
+    line-height: 2.5;
+}
+
+.links a {
+    color: rgb(133, 133, 193);
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.copyright {
+    color: #eaf6f6;
+    font-size: 0.6rem;
+    padding: 30px 0;
+}
+
+
+
+@media (max-width: 700px) {
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        gap: 100px;
+        min-width: 600px;
+    }
+
+    .left-area {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .left-area img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        border: 5px solid black;
+    }
+
+    .my-description {
+        width: 100%;
+        padding: 30px;
+        color: black;
+        border-radius: 10px;
+    }
+
+    .my-experience {
+        width: 80%;
+        min-width: 600px;
+        margin-top: 300px;
+    }
+
+    .my-projects {
+        width: 90%;
+        margin-top: 200px;
+        margin-bottom: 300px;
+    }
+}
