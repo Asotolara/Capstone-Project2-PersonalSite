@@ -11,6 +11,7 @@ body {
     background: rgb(208, 186, 186);
     text-align: center;
     color: black;
+    width: 100%;
 }
 
 .header {
@@ -19,6 +20,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 
@@ -211,7 +213,13 @@ h1 {
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 680px) {
+    body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
     .about-me {
         display: flex;
         flex-direction: column;
@@ -238,13 +246,11 @@ h1 {
     .my-description {
         width: 100%;
         padding: 30px;
-        color: black;
         border-radius: 10px;
     }
 
     .my-experience {
         width: 80%;
-        min-width: 600px;
         margin-top: 300px;
     }
 
